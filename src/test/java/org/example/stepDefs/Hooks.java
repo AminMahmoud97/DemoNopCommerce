@@ -38,7 +38,7 @@ public class Hooks {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // step4 navigate to home page
-        driver.get("https://demo.nopcommerce.com/");
+        driver.get(ConfigReader.get("url"));
     }
 
     @After
